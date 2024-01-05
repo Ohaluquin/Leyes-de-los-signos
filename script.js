@@ -100,7 +100,7 @@ function startGame() {
   lives = 3;
   maxNumber = 20;
   minNumber = -10;
-  timerDuration = 20;
+  timerDuration = 22;
   remainingTime = timerDuration;
   // Limpiar los mensajes y el área de estado
   const statusArea = document.getElementById("statusArea");
