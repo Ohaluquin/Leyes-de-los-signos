@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  background-image: url("pizarra.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  color: #f83a3a;
+}
+
+#gameArea {
+  border: 2px solid #ccc;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+/* Contenedor para las métricas del juego */
+div#metricsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  padding: 0px;
+  margin-top: -20px;
+}
+
+#timerArea {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  margin-right: 40px;
+  padding-top: 20px;  
+}
+
+#statusArea {
+  font-size: 18px;
+  font-weight: bold;
+  width: 40%;
+  display: flex;
+}
+
+/* Áreas de texto e información */
+#scoreArea,
+#difficultyArea,
+#livesArea {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#questionAndInput {
+  display: flex;
+  align-items: center; /* Alinear verticalmente en el centro */
+  justify-content: space-between;
+}
+
+#questionArea {
+  margin-right: 40px; /* Añadir 20px de margen a la derecha */
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Teclado numérico */
+#numericKeypad button {
+  width: 60px;
+  height: 50px;
+  font-size: 24px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Personalización de colores */
+#livesArea {
+  color: red;
+}
+#scoreArea {
+  color: green;
+}
+
+input#userInput {
+  width: 50px; /* Ancho del cuadro */
+  height: 40px; /* Altura del cuadro */
+  font-size: 24px; /* Tamaño de la fuente */
+  background-color: #ffd700;
+  margin-left: 2px; /* Añadir 20px de margen a la izquierda */
+}
+
+button {
+  background-color: #ffd700; /* Un amarillo dorado */
+  color: #000000; /* Texto en negro para contraste */
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Bordes redondeados para un look suavizado */
+  box-shadow: 2px 2px 4px #000000; /* Una sombra sutil para dar profundidad */
+}
+
+button:hover {
+  background-color: #ffea00; /* Un amarillo más claro para el hover */
+}
+
+#deleteButton {
+  font-size: 2em !important; /* Ajusta esto según el tamaño que prefieras */
+}
+
+#subContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#numericKeypad {
+  width: 40%;
+}
+
+#soldiersArea {
+  width: 60%;
+  height: 292px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#area1 {
+  width: 55%;
+  text-align: right;
+}
+
+#area2 {
+  width: 45%;
+  text-align: center;
+}
+
+#soldierImage1 {
+  height: 1.8rem;
+}
+
+#soldierImage4 {
+  height: 4rem;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de los signos</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+    <div id="gameArea">
+        <div id="metricsContainer">
+            <div id="titulo">
+                <h1>Juego de los signos</h1>
+            </div>
+            <div id="livesArea">Vidas: <span id="livesCount">3</span></div>
+            <div id="scoreArea">Puntuación: <span id="scoreCount">0</span></div>
+            <div id="difficultyArea">Nivel: <span id="difficultyLevel">Principiante</span></div>
+        </div>
+
+        <div id="gameContainer">
+            <div id="subContainer">
+                <div id="numericKeypad">
+                    <button onclick="appendToInput('1')">1</button>
+                    <button onclick="appendToInput('2')">2</button>
+                    <button onclick="appendToInput('3')">3</button>
+                    <button onclick="appendToInput('4')">4</button>
+                    <button onclick="appendToInput('5')">5</button>
+                    <br />
+                    <button onclick="appendToInput('6')">6</button>
+                    <button onclick="appendToInput('7')">7</button>
+                    <button onclick="appendToInput('8')">8</button>
+                    <button onclick="appendToInput('9')">9</button>
+                    <button onclick="appendToInput('0')">0</button>
+                    <br />
+                    <button onclick="appendToInput('+')">+</button>
+                    <button onclick="appendToInput('-')">-</button>
+                    <button id="deleteButton" onclick="deleteLastInput()">&larr;</button>
+                    <button onclick="submitInput()">=</button>
+                </div>
+                <div id="soldiersArea">
+                    <div id="area1"></div>
+                    <div id="area2"></div>
+                </div>
+            </div>
+
+            <div id="questionAndInput">
+                <div>
+                    <input type="text" id="userInput" readonly>
+                    <div id="timerArea">Tiempo restante: <span id="timerCount">8s</span> </div>
+                </div>
+                <div id="questionArea">Operación </div>
+                <div id="statusArea"> </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
