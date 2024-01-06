@@ -65,12 +65,11 @@ div#metricsContainer {
   font-weight: bold;
 }
 
-/* Teclado numérico */
 #numericKeypad button {
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.5rem;
-  margin: 0.5rem;
+  width: 4vw; /* 10% del ancho del viewport */
+  height: 4vw; /* 10% del ancho del viewport para mantener la proporción */
+  font-size: 2vw; /* Tamaño de fuente relativo al ancho del viewport */
+  margin: 0.5vw;
   cursor: pointer;
 }
 
@@ -110,8 +109,8 @@ button:hover {
 }
 
 #deleteButton {
-  font-size: 1.8em !important; /* Ajusta esto según el tamaño que prefieras */
-  padding-top: 0.1em !important;
+  font-size: 1.8vw !important; /* Ajusta esto según el tamaño que prefieras */
+  /*padding-top: 0.1vw !important;*/
 }
 
 #gameContainer {
@@ -129,7 +128,7 @@ button:hover {
 
 #soldiersArea {
   width: 60%;
-  height: 15rem;
+  height: 20rem;
   display: flex;
   justify-content: space-between;
 }
@@ -144,10 +143,45 @@ button:hover {
   text-align: center;
 }
 
-#soldierImage1 {
-  height: 1.5rem;
+.soldierImage1 {
+  height: 2vw;
 }
 
-#soldierImage4 {
-  height: 5rem;
+.soldierImage4 {
+  height: 8vw;
+}
+
+.signImage {
+  height: 3vw;
+}
+
+.signsContainer {
+  display: flex;
+}
+
+.signTop {
+  width: 90%;
+  display: flex;
+  justify-content: center; /* Centrado horizontal de la imagen del signo */
+}
+
+.signLeft {
+  display: flex;
+  align-items: center; /* Centrado vertical de la imagen del signo */
+  width: 10%; /* Ancho angosto para el div izquierdo */
+}
+
+.rectangle {
+  width: 90%;
+  text-align: center; 
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  #soldiersArea {
+    height: 15rem;
+  }
 }

@@ -189,25 +189,37 @@ function displaySSoldiers(num1, num2) {
 }
 
 function displayMSoldiers(num1, num2) {
-  const matrixR = createRectangle(num1, num2, 1);
+  const matrixR = createRectangle(num1, num2);
   const area1 = document.getElementById("area1");
   const area2 = document.getElementById("area2");
   area1.innerHTML = matrixR;
   area2.innerHTML = "";
 }
 
-function createRectangle(num1, num2, size) {
+function createRectangle(num1, num2) {
   let matrixHTML = "";
-  const isPositive = num1 * num2 >= 0;
-  const soldierImage = isPositive ? "positivo.gif" : "negativo.gif";
+  const soldierImage = (num1 * num2 >= 0) ? "positivo.gif" : "negativo.gif";
+  const signImage1 = (num1 >= 0) ? "positivo.png" : "negativo.png";
+  const signImage2 = (num2 >= 0) ? "positivo.png" : "negativo.png";
+  // Divs para los signos y el rectángulo
+  matrixHTML += "<div class='signsContainer'>";
+  matrixHTML += "<div class='signLeft'></div>";
+  matrixHTML += "<div class='signTop'><img src='" + signImage2 + "' alt='Signo' class='signImage'></div></div>";
+  matrixHTML += "<div class='signsContainer'>";
+  matrixHTML += "<div class='signLeft'><img src='" + signImage1 + "' alt='Signo' class='signImage'></div>";
+  matrixHTML += "<div class='rectangle'>";
+  // Crear el rectángulo de soldados
   for (let i = 0; i < Math.abs(num1); i++) {
-    for (let i = 0; i < Math.abs(num2); i++) {
-      matrixHTML += `<img src="${soldierImage}" alt="Soldado" id="soldierImage${size}">`;
+    for (let j = 0; j < Math.abs(num2); j++) {
+      matrixHTML += "<img src='" + soldierImage + "' alt='Soldado' class='soldierImage1'>";
     }
-    matrixHTML += '<br />';
+    matrixHTML += "<br />";
   }
+  matrixHTML += "</div>";  // Cierre del div del rectángulo
+  matrixHTML += "</div>";  // Cierre del div de los signos y el rectángulo
   return matrixHTML;
 }
+
 
 function createSoldierMatrix(num, oposite) {
   let matrixHTML = "";
@@ -221,7 +233,7 @@ function createSoldierMatrix(num, oposite) {
     if (i >= Math.abs(num) - numToCancel) {
       soldierImage = isPositive ? "positivo_vanish.gif" : "negativo_vanish.gif";
     }
-    matrixHTML += `<img src="${soldierImage}" alt="Soldado" id="soldierImage4">`;
+    matrixHTML += `<img src="${soldierImage}" alt="Soldado" class="soldierImage4">`;
   }
   return matrixHTML;
 }
