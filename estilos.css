@@ -14,6 +14,8 @@ h1 {
 }
 
 #gameArea {
+  min-width: 500px;
+  height: 90vh;
   border: 2px solid #ccc;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -66,9 +68,9 @@ div#metricsContainer {
 }
 
 #numericKeypad button {
-  width: 5vw; /* 10% del ancho del viewport */
-  height: 5vw; /* 10% del ancho del viewport para mantener la proporción */
-  font-size: 2vw; /* Tamaño de fuente relativo al ancho del viewport */
+  width: 6vw; /* 10% del ancho del viewport */
+  height: 6vw; /* 10% del ancho del viewport para mantener la proporción */
+  font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
   margin: 0.5vw;
   cursor: pointer;
 }
@@ -109,7 +111,7 @@ button:hover {
 }
 
 #deleteButton {
-  font-size: 1.8vw !important; /* Ajusta esto según el tamaño que prefieras */
+  font-size: 4vw !important; /* Ajusta esto según el tamaño que prefieras */
 }
 
 #gameContainer {
@@ -122,12 +124,12 @@ button:hover {
 }
 
 #numericKeypad {
-  width: 33%;
+  width: 36%;
 }
 
 #soldiersArea {
   width: 60%;
-  height: 20rem;
+  height: 75vh;
   display: flex;
   justify-content: space-between;
 }
@@ -143,7 +145,7 @@ button:hover {
 }
 
 .soldierImage1 {
-  height: 2vw;
+  height: 2.5vw;
 }
 
 .soldierImage4 {
@@ -179,8 +181,8 @@ button:hover {
   visibility: hidden;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #soldiersArea {
-    height: 14rem;
+    height: 30vw;
   }
 }
