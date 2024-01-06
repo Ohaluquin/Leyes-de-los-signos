@@ -9,6 +9,8 @@ let currentQuestion;
 
 window.onload = function () {
   score = -1; // -1 para que ponga un mensaje inicial
+  const loadingMessage = document.getElementById("area1");
+  loadingMessage.innerHTML = "";
   endGame();
 };
 
