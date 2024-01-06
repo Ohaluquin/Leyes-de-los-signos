@@ -114,6 +114,10 @@ button:hover {
   padding-top: 0.1em !important;
 }
 
+#gameContainer {
+  margin-top: -20px;
+}
+
 #subContainer {
   display: flex;
   justify-content: space-between;
@@ -125,10 +129,9 @@ button:hover {
 
 #soldiersArea {
   width: 60%;
-  height: 13rem;
+  height: 15rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
 }
 
 #area1 {
