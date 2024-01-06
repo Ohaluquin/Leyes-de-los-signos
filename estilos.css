@@ -110,7 +110,7 @@ button:hover {
 }
 
 #deleteButton {
-  font-size: 2em !important; /* Ajusta esto según el tamaño que prefieras */
+  font-size: 1.8em !important; /* Ajusta esto según el tamaño que prefieras */
 }
 
 #subContainer {
@@ -124,7 +124,7 @@ button:hover {
 
 #soldiersArea {
   width: 60%;
-  height: 292px;
+  height: 14rem;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
