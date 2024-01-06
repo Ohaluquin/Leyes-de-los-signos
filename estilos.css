@@ -111,6 +111,7 @@ button:hover {
 
 #deleteButton {
   font-size: 1.8em !important; /* Ajusta esto según el tamaño que prefieras */
+  padding-top: 0.1em !important;
 }
 
 #subContainer {
