@@ -36,7 +36,7 @@ div#metricsContainer {
   font-weight: bold;
   color: red;
   margin-right: 40px;
-  padding-top: 20px;  
+  padding-top: 5px;  
 }
 
 #statusArea {
@@ -44,6 +44,8 @@ div#metricsContainer {
   font-weight: bold;
   width: 40%;
   display: flex;
+  align-items: start;
+  margin-top: -10px;
 }
 
 /* Áreas de texto e información */
@@ -56,13 +58,13 @@ div#metricsContainer {
 
 #questionAndInput {
   display: flex;
-  align-items: center; /* Alinear verticalmente en el centro */
+  align-items:start;
   justify-content: space-between;
 }
 
 #questionArea {
   margin-right: 40px; /* Añadir 20px de margen a la derecha */
-  padding-top: 20px;
+  padding-top: 5px;
   font-size: 24px;
   font-weight: bold;
 }
@@ -88,7 +90,7 @@ input#userInput {
   height: 40px; /* Altura del cuadro */
   font-size: 24px; /* Tamaño de la fuente */
   background-color: #ffd700;
-  margin-left: 2px; /* Añadir 20px de margen a la izquierda */
+  margin-left: 2px; /* Añadir 2px de margen a la izquierda */
 }
 
 button {
@@ -183,6 +185,6 @@ button:hover {
 
 @media (max-width: 800px) {
   #soldiersArea {
-    height: 30vw;
+    height: 28vw;
   }
 }
