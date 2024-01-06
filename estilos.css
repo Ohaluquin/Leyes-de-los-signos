@@ -66,8 +66,8 @@ div#metricsContainer {
 }
 
 #numericKeypad button {
-  width: 4vw; /* 10% del ancho del viewport */
-  height: 4vw; /* 10% del ancho del viewport para mantener la proporción */
+  width: 5vw; /* 10% del ancho del viewport */
+  height: 5vw; /* 10% del ancho del viewport para mantener la proporción */
   font-size: 2vw; /* Tamaño de fuente relativo al ancho del viewport */
   margin: 0.5vw;
   cursor: pointer;
@@ -110,7 +110,6 @@ button:hover {
 
 #deleteButton {
   font-size: 1.8vw !important; /* Ajusta esto según el tamaño que prefieras */
-  /*padding-top: 0.1vw !important;*/
 }
 
 #gameContainer {
@@ -182,6 +181,6 @@ button:hover {
 
 @media (max-width: 600px) {
   #soldiersArea {
-    height: 15rem;
+    height: 16rem;
   }
 }
