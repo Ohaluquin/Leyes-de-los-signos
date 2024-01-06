@@ -76,7 +76,7 @@ function handleInput(input) {
 
 function updateTimer() {
   const timerArea = document.getElementById("timerArea");
-  timerArea.textContent = `Tiempo restante: ${remainingTime}s`; // Actualizar el área del temporizador
+  timerArea.textContent = `Tiempo: ${remainingTime}s`; // Actualizar el área del temporizador
   if (remainingTime <= 0) {
     // Verificar si el tiempo se ha agotado
     lives--; // Restar una vida
