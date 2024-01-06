@@ -67,8 +67,8 @@ div#metricsContainer {
 
 /* Teclado numérico */
 #numericKeypad button {
-  width: 60px;
-  height: 50px;
+  width: 50px;
+  height: 45px;
   font-size: 24px;
   margin: 5px;
   cursor: pointer;
@@ -94,12 +94,12 @@ button {
   background-color: #ffd700; /* Un amarillo dorado */
   color: #000000; /* Texto en negro para contraste */
   border: none;
-  padding: 8px 16px;
+  padding: 7px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 18px;
+  margin: 2px 2px;
   cursor: pointer;
   border-radius: 8px; /* Bordes redondeados para un look suavizado */
   box-shadow: 2px 2px 4px #000000; /* Una sombra sutil para dar profundidad */
