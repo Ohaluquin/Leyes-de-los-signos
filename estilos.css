@@ -67,10 +67,10 @@ div#metricsContainer {
 
 /* Teclado numérico */
 #numericKeypad button {
-  width: 50px;
-  height: 45px;
-  font-size: 24px;
-  margin: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -119,7 +119,7 @@ button:hover {
 }
 
 #numericKeypad {
-  width: 40%;
+  width: 33%;
 }
 
 #soldiersArea {
@@ -141,9 +141,9 @@ button:hover {
 }
 
 #soldierImage1 {
-  height: 1.8rem;
+  height: 1.5rem;
 }
 
 #soldierImage4 {
-  height: 6rem;
+  height: 5rem;
 }
