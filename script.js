@@ -45,9 +45,11 @@ function generateQuestion() {
     } 
   else questionArea.textContent = `Calcula (${num1})(${num2})`;
 
-  // Agregar llamada a función para mostrar soldados
-  if (operation == "+") displaySSoldiers(num1, num2);
-  else displayMSoldiers(num1, num2);
+  if(score < 30) { // Agregar llamada a función para mostrar soldados
+    if (operation == "+") displaySSoldiers(num1, num2);
+    else displayMSoldiers(num1, num2);
+    }
+  else displaySSoldiers(0,0);
 }
 
 function handleInput(input) {
@@ -82,6 +84,7 @@ function updateTimer() {
   if (remainingTime <= 0) {
     // Verificar si el tiempo se ha agotado
     lives--; // Restar una vida
+    incorrectSound.play();
     updateMetrics();
     if (lives <= 0) {
       // Comprobar si quedan vidas
