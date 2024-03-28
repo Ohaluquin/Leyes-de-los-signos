@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 5px;
   background-color: #f4f4f4;
   background-image: url("pizarra.png");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ h1 {
   min-width: 500px;
   height: 90vh;
   border: 2px solid #ccc;
-  padding: 10px;
+  padding: 5px;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
 }
