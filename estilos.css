@@ -71,7 +71,7 @@ div#metricsContainer {
 
 #numericKeypad button {
   width: 6vw; /* 10% del ancho del viewport */
-  height: 6vw; /* 10% del ancho del viewport para mantener la proporción */
+  height: 5.8vw; /* 10% del ancho del viewport para mantener la proporción */
   font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
   margin: 0.5vw;
   cursor: pointer;
