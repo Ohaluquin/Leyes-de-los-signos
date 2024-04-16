@@ -71,8 +71,8 @@ div#metricsContainer {
 
 #numericKeypad button {
   width: 6vw; /* 10% del ancho del viewport */
-  height: 5.8vw; /* 10% del ancho del viewport para mantener la proporción */
-  font-size: 5vw; /* Tamaño de fuente relativo al ancho del viewport */
+  height: 5.7vw; /* 10% del ancho del viewport para mantener la proporción */
+  font-size: 4.7vw; /* Tamaño de fuente relativo al ancho del viewport */
   margin: 0.5vw;
   cursor: pointer;
 }
@@ -101,7 +101,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   margin: 2px 2px;
   cursor: pointer;
   border-radius: 8px; /* Bordes redondeados para un look suavizado */
@@ -194,7 +194,7 @@ button:hover {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparente */
   color: white;
   text-align: center;
   padding: 5px 0;
